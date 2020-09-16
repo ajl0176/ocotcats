@@ -1,11 +1,15 @@
 body {
   margin: 1px;
   padding: 1px;
-
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
 .octodex {
   margin: 20px;
-  vertical-align: middle;
 }
 
 .octocat {
@@ -16,12 +20,32 @@ body {
   font-size: 20px;
   margin: auto 10px;
 }
+.octocat a{
+  border-radius: 2px;
+  position:relative;
+}
 
-.octocat > a img {
+.octocat > a img{
   width: 100%;
   margin-top:15px;
-  border: 1px solid lightgrey;
-  border-radius: 2px;
+  border: 1px solid #C6C5CB;
+
+
+  position: relative;
+}
+
+.octocat > a::after {
+  content:"";
+  height: 0;
+  width: 0;
+  border-top: solid 10px #C6C5CB;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent;
+
+  position: absolute;
+  top:100%;
+  right: 0;
+  transform: translateY(-50%);
 
 }
 
@@ -29,6 +53,7 @@ body {
   width: 8%;
   position:relative;
   border-radius:3px;
+  display: inline-block;
 }
 
 .image-footer {
@@ -38,6 +63,7 @@ body {
   border-bottom: 1px solid #C6C5CB;
   font-size: 18px;
   height:80px;
+  position: relative;
 }
 
 .image-number::before {
@@ -48,6 +74,8 @@ body {
 .image-number {
   color: #C6C5CB;
   font-size: 18px;
+  position: absolute;
+  left: 0;
 }
 
 .image-caption {
