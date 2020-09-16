@@ -1,0 +1,50 @@
+body {
+  margin: 1px;
+  padding: 1px;
+
+}
+.octodex {
+  margin: 20px;
+  vertical-align: middle;
+}
+
+.octocat {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+  font-size: 20px;
+  margin: auto 10px;
+}
+
+.octocat > a img {
+  width: 100%;
+  margin-top:15px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+
+}
+
+.authors img {
+  width: 7%;
+  position:relative;
+  top: 7px;
+  border-radius: 2px;
+  list-style-type: inherit;
+}
+
+.image-footer {
+  display:inline-block;
+  justify-content: flex-end;
+  border-bottom: 1px solid #C6C5CB;
+}
+
+.image-number {
+  color: #C6C5CB
+}
+
+div.image-caption {
+  text-align: right;
+  color: black;
+
+}
