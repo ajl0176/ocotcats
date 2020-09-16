@@ -30,7 +30,6 @@ ul {
   margin-top:15px;
   border: 1px solid #C6C5CB;
 
-
   position: relative;
 }
 
@@ -49,17 +48,23 @@ ul {
 
 }
 
+.authors a {
+  display: inline-block;
+  width: 30px;
+}
+
 .authors img {
-  width: 8%;
+  width: 100%;
   position:relative;
   border-radius:3px;
-  display: inline-block;
 }
 
 .image-footer {
-  display: block;
+  display: flex;
+  align-items: center;
+  /* display: block;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-end; */
   border-bottom: 1px solid #C6C5CB;
   font-size: 18px;
   height:80px;
@@ -74,13 +79,15 @@ ul {
 .image-number {
   color: #C6C5CB;
   font-size: 18px;
-  position: absolute;
-  left: 0;
+  /* position: absolute;
+  left: 0; */
 }
 
 .image-caption {
-  display:inline-block;
-  text-align: right;
+  /* display:inline-block; */
+  /* text-align: right; */
+  display: flex;
+  margin-left: auto;
 }
 
 .image-caption span {
