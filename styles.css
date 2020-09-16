@@ -26,25 +26,40 @@ body {
 }
 
 .authors img {
-  width: 7%;
+  width: 8%;
   position:relative;
-  top: 7px;
-  border-radius: 2px;
-  list-style-type: inherit;
+  border-radius:3px;
 }
 
 .image-footer {
-  display:inline-block;
+  display: block;
+  flex-direction: column;
   justify-content: flex-end;
   border-bottom: 1px solid #C6C5CB;
+  font-size: 18px;
+  height:80px;
+}
+
+.image-number::before {
+  content: "#";
+  color: #C6C5CB;
 }
 
 .image-number {
-  color: #C6C5CB
+  color: #C6C5CB;
+  font-size: 18px;
 }
 
-div.image-caption {
+.image-caption {
+  display:inline-block;
   text-align: right;
-  color: black;
+}
 
+.image-caption span {
+  color: #9D9E9A;
+}
+
+.image-caption a {
+  color: #010100;
+  font-size: 20px
 }
